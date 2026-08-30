@@ -25,8 +25,6 @@ echo zsh | chsh -s zsh 2>/dev/null || true
 # Apply color and font settings
 printf '0\n' | bash "$HOME/.termux/colors.sh" 2>/dev/null
 printf '14\n' | bash "$HOME/.termux/fonts.sh" 2>/dev/null
-
-# Launch Zsh
 ## zsh ho to direct chalega ## 
 cat <<'E'>> /data/data/com.termux/files/usr/etc/zshrc
 ## defult welcome massage remove ##
