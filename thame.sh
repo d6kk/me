@@ -22,9 +22,9 @@ echo "source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "$HO
 chsh -s zsh
 
 echo "oh-my-zsh install complete!\nChoose your color scheme now~"
-echo "0" | $HOME/.termux/colors.sh
+printf '0\n' | bash "$HOME/.termux/colors.sh"
 
 echo "Choose your font now~"
-echo "14" | $HOME/.termux/fonts.sh
+printf '14\n' | bash "$HOME/.termux/fonts.sh"
 
 bash $HOME/me/Welcome-massege.sh
