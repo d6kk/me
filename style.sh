@@ -27,5 +27,5 @@ printf '0\n' | bash "$HOME/.termux/colors.sh" 2>/dev/null
 printf '14\n' | bash "$HOME/.termux/fonts.sh" 2>/dev/null
 
 # Launch Zsh
-bash "$HOME/me/Welcome-massege.sh" 2>/dev/null
+source "$HOME/me/Welcome-massege.sh" 2>/dev/null
 exec zsh -i -l
