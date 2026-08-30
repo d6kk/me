@@ -1,31 +1,79 @@
-# installation all besic pkg in one commands
 # Requaments : 2GB plus storages
-# follow all commands
-* apt-get update 
-* apt-get upgrade
-* pkg install git
-* git clone https://github.com/darkiller409/Allbasic 
-* cd Allbasic 
-* bash install.sh
-* select colour   0 
-* select font    14
-* open new season
-* cd Allbasic
-* bash file.sh
+# install Thame 
+    * pkg install git
+    * git clone https://github.com/darkiller409/Allbasic 
+    * cd me
+    * bash thame.sh
+    * select colour   0 #auto
+    * select font    14 #auto
+    * open new season
 
-*WELCOME MASSAGE 
-*  /data/data/com.termux/files/usr/etc/nano zshrc
-*  neofetch
+# Set Welcome Massage 
+### Zsh For this ⤵️
+    ## zsh ho to direct chalega ## 
+    cat <<'E'>> /data/data/com.termux/files/usr/etc/zshrc
+    ## defult welcome massage remove ##
+    if [ -f "/data/data/com.termux/files/usr/etc/motd" ]; then
+        rm -rf /data/data/com.termux/files/usr/etc/motd
+    fi
+    ## important pkg download ##
+    if ! command -v neofetch > /dev/null 2>&1; then
+        pkg install neofetch -y > /dev/null 2>&1
+    fi
+    ## important pkg download ##
+    if ! command -v figlet > /dev/null 2>&1; then
+        pkg install figlet -y > /dev/null 2>&1
+    fi
+    ## Show welcome massage command ##
+    clear
+    neofetch
+    figlet -f standard   WELCOME
+    figlet -f standard DARKILLER
+    E
+### zsh file use in bash
+    ## bashprofile ##
+    cat <<"E">> ~/.bashprofile
+    if [ -f "$HOME/.bashrc" ]; then
+        source ~/.bashrc
+    fi
+    E
+    ## bashrc ##
+    cat <<'E'>> ~/.bashrc
+    if [ -f "$PREFIX/etc/zshrc" ]; then
+        source $PREFIX/etc/zshrc
+    fi
+    E
+    source ~/.bashprofile
 
-figlet -f standard   WELCOME
-
-figlet -f standard DARKILLER
-
-apt list --upgradable
- 
-  # Thankyou for follow my commands
-
-
+### bash For this ⤵️
+    ## bash ho to direct chalega ##
+    ## bashrc ##
+    cat <<'E'>> ~/.bashrc
+    ## defult welcome massage remove ##
+    if [ -f "/data/data/com.termux/files/usr/etc/motd" ]; then
+        rm -rf /data/data/com.termux/files/usr/etc/motd
+    fi
+    ## important pkg download ##
+    if ! command -v neofetch > /dev/null 2>&1; then
+        pkg install neofetch -y > /dev/null 2>&1
+    fi
+    ## important pkg download ##
+    if ! command -v figlet > /dev/null 2>&1; then
+        pkg install figlet -y > /dev/null 2>&1
+    fi
+    ## Show welcome massage command ##
+    clear
+    neofetch
+    figlet -f standard   WELCOME
+    figlet -f standard DARKILLER
+    E
+    ## bashprofile ##
+    cat <<"E">> ~/.bashprofile
+    if [ -f "$HOME/.bashrc" ]; then
+        source ~/.bashrc
+    fi
+    E
+    source ~/.bashprofile
 
 ## Tips (See Termux Wiki)
 
