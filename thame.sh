@@ -27,4 +27,4 @@ printf '0\n' | bash "$HOME/.termux/colors.sh"
 echo "Choose your font now~"
 printf '14\n' | bash "$HOME/.termux/fonts.sh"
 source $HOME/me/Welcome-massege.sh
-exec zsh
+exec zsh -i -l
