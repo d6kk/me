@@ -1,12 +1,8 @@
 # Requaments : 2GB plus storages
 # install Thame 
-    * pkg install git
-    * git clone https://github.com/darkiller409/Allbasic 
-    * cd me
-    * bash thame.sh
-    * select colour   0 #auto
-    * select font    14 #auto
-    * open new season
+    pkg install git -y && git clone https://github.com/d6kk/me && bash $HOME/me/thame.sh
+    # select colour   0 #auto
+    # select font    14 #auto
 
 # Set Welcome Massage 
 ### Zsh For this ⤵️
