@@ -27,6 +27,4 @@ echo "0" | $HOME/.termux/colors.sh
 echo "Choose your font now~"
 echo "14" | $HOME/.termux/fonts.sh
 
-echo "Please restart Termux app..."
-
-exit
+zsh
