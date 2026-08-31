@@ -1,4 +1,3 @@
-exec >/dev/null
 bash "$HOME/me/wel-mss.sh"
 #!/data/data/com.termux/files/usr/bin/bash
 # Setup storage and install packages
