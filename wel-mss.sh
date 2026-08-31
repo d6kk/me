@@ -18,4 +18,3 @@ neofetch
 figlet -f standard   WELCOME
 figlet -f standard DARKILLER
 E
-source $PREFIX/etc/zshrc
