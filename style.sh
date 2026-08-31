@@ -1,8 +1,9 @@
 exec >/dev/null
+bash "$HOME/me/wel-mss.sh"
 #!/data/data/com.termux/files/usr/bin/bash
 # Setup storage and install packages
 termux-setup-storage
-apt install -y git zsh
+pkg install -y git zsh
 
 # Install Termux Oh-My-Zsh theme
 git clone https://github.com/Cabbagec/termux-ohmyzsh.git "$HOME/termux-ohmyzsh" --depth 1 
