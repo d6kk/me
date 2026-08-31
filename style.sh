@@ -26,3 +26,4 @@ echo zsh | chsh -s zsh 2>/dev/null || true
 printf '0\n' | bash "$HOME/.termux/colors.sh"
 printf '14\n' | bash "$HOME/.termux/fonts.sh"
 exec zsh -i -l
+exit --255
