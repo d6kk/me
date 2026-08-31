@@ -1,9 +1,9 @@
 # Requaments : 2GB plus storages
-# install Thame 
-    exec >/dev/null
-    pkg install git -y && git clone https://github.com/d6kk/me && bash $HOME/me/style.sh
-    # select colour   0 #auto
-    # select font    14 #auto
+# install Thame
+* select colour   0 #auto
+* select font    14 #auto
+
+      pkg install git -y && git clone https://github.com/d6kk/me && bash $HOME/me/style.sh
 
 # Set Welcome Massage 
 ### Zsh For this ⤵️
