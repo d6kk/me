@@ -1,5 +1,5 @@
 ##custom massage set for welcom
-echo -e "\033[32mWelcome\033[0m\033[31mmassage\033[0m\033[35mdalo\033[0m"
+echo -e "\033[32mWelcome \033[0m\033[31mmassage \033[0m\033[35mdalo\033[0m"
 read -p "hare:- " name
 touch "$HOME/.name"
 echo "$name" > "$HOME/.name"
