@@ -1,5 +1,4 @@
 # Requaments : 2GB plus storages
-https://github.com/d6kk/me#install-thame
 # install Thame
 * select colour   0 #auto
 * select font    14 #auto
