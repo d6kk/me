@@ -1,3 +1,8 @@
+##custom massage set for welcom
+read -p "Welcom massage dalo" name
+touch "$HOME/.name"
+echo "$name" > "$HOME/.name"
+
 ## zsh ho to direct chalega ## 
 cat <<'E'>> /data/data/com.termux/files/usr/etc/zshrc
 ## defult welcome massage remove ##
@@ -15,6 +20,5 @@ fi
 ## Show welcome massage command ##
 clear
 neofetch
-figlet -f standard   WELCOME
-figlet -f standard DARKILLER
+cat "$HOME/.name" | figlet -f standard
 E
