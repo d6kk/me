@@ -1,4 +1,4 @@
-bash "$HOME/me/wel-mss.sh"
+bash "$HOME/me/wlc.sh"
 #!/data/data/com.termux/files/usr/bin/bash
 # Setup storage and install packages
 termux-setup-storage
